@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tentang koppen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#28180b",
+                        "on-secondary-fixed": "#241a0e",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#1b1c1a",
+                        "inverse-on-surface": "#f2f1ed",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#f4dfcb",
+                        "on-tertiary-fixed-variant": "#3e4c16",
+                        "on-surface-variant": "#4e453e",
+                        "on-tertiary-fixed": "#161f00",
+                        "primary": "#322214",
+                        "on-tertiary-container": "#9cac6b",
+                        "outline": "#80756d",
+                        "secondary-fixed": "#f4dfcb",
+                        "surface-tint": "#705a49",
+                        "primary-fixed-dim": "#dec1ac",
+                        "on-primary-fixed-variant": "#574333",
+                        "inverse-surface": "#2f312e",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#1f2900",
+                        "secondary-fixed-dim": "#d7c3b0",
+                        "surface": "#faf9f5",
+                        "surface-bright": "#faf9f5",
+                        "surface-variant": "#e3e2df",
+                        "surface-container-high": "#e9e8e4",
+                        "outline-variant": "#d2c4bb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#524436",
+                        "tertiary-fixed-dim": "#bdce89",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e3e2df",
+                        "background": "#faf9f5",
+                        "surface-dim": "#dbdad6",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#bba08c",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#33400a",
+                        "on-secondary-container": "#716252",
+                        "tertiary-fixed": "#d9eaa3",
+                        "on-background": "#1b1c1a",
+                        "secondary": "#6b5c4c",
+                        "surface-container": "#efeeea",
+                        "primary-container": "#4a3728",
+                        "surface-container-low": "#f4f4f0",
+                        "inverse-primary": "#dec1ac",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#fbddc7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "48px",
+                        "gutter": "24px",
+                        "container-max": "1120px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "stack-md": "24px",
+                        "stack-sm": "12px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Noto Serif"],
+                        "caption": ["DM Sans"],
+                        "body-md": ["DM Sans"],
+                        "body-lg": ["DM Sans"],
+                        "headline-sm": ["Noto Serif"],
+                        "display-lg": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "label-md": ["DM Sans"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+        min-height: max(884px, 100dvh);
+        animation: rgbBackground 8s infinite alternate;
+    }
+
+    @keyframes rgbBackground {
+        0% {
+            background-color: #ff0000;
+        }
+        25% {
+            background-color: #00ff00;
+        }
+        50% {
+            background-color: #0000ff;
+        }
+        75% {
+            background-color: #ff00ff;
+        }
+        100% {
+            background-color: #00ffff;
+        }
+    }
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-20">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-xl flat no shadows transition-all duration-300 border-b border-transparent">
+<div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<!-- Leading Icon -->
+<button aria-label="Menu" class="md:hidden cursor-pointer active:scale-95 transition-transform" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+</button>
+<div class="hidden md:flex items-center">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim mr-2" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+</div>
+<!-- Brand Logo -->
+<div class="font-display-lg text-display-lg-mobile md:font-display-lg md:text-display-lg tracking-tight text-primary dark:text-primary-fixed cursor-pointer active:scale-95 transition-transform">
+                Koppen_street
+            </div>
+<!-- Desktop Navigation Links (Extrapolated from Shared Components) -->
+<nav class="hidden md:flex items-center gap-6">
+<a href="kelompok RIF.html">Tentang Kami</a>
+</nav>
+<!-- Trailing Action -->
+<a 
+    href="https://wa.me/628216191582?text=Halo%20Koppen_Street,%20saya%20ingin%20memesan."
+    target="_blank"
+    rel="noopener noreferrer"
+    class="bg-primary-container text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary transition-colors duration-300 cursor-pointer active:scale-95 hidden md:block"
+>
+    Pesan Sekarang
+</a>
+<button class="md:hidden cursor-pointer active:scale-95 transition-transform text-primary dark:text-primary-fixed-dim">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</header>
+<!-- NavigationDrawer (Mobile) -->
+<div class="fixed inset-y-0 left-0 z-50 flex flex-col h-full w-72 rounded-r-none bg-surface dark:bg-surface-dim shadow-32px-espresso transform -translate-x-full transition-transform ease-in-out duration-300" id="navigation-drawer">
+<div class="p-6 border-b border-surface-variant">
+<h2 class="font-display-lg text-display-lg-mobile text-primary dark:text-primary-fixed">Kopi &amp; Ruang</h2>
+<button class="absolute top-6 right-6 text-on-surface-variant" id="close-menu-btn">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2 p-4 font-body-lg text-body-lg text-primary dark:text-primary-fixed-dim">
+<a class="flex items-center gap-4 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 px-4 py-3 hover:bg-surface-container-high transition-colors ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined">home</span>
+                Beranda
+            </a>
+<a class="flex items-center gap-4 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 px-4 py-3 hover:bg-surface-container-high transition-colors ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined">restaurant_menu</span>
+                Menu
+            </a>
+<a class="flex items-center gap-4 bg-secondary-container text-on-secondary-container rounded-full mx-2 px-4 py-3 hover:bg-surface-container-high transition-colors ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">info</span>
+                Tentang
+            </a>
+<a class="flex items-center gap-4 text-on-surface-variant hover:bg-surface-variant rounded-full mx-2 px-4 py-3 hover:bg-surface-container-high transition-colors ease-in-out duration-300" href="#">
+<span class="material-symbols-outlined">contact_support</span>
+                Kontak
+            </a>
+</nav>
+</div>
+<!-- Drawer Overlay -->
+<div class="fixed inset-0 bg-on-surface/20 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300" id="drawer-overlay"></div>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-stack-lg flex flex-col gap-stack-lg md:gap-[96px]">
+<!-- Story Section: "Lebih dari Sekadar Kopi" -->
+<section class="flex flex-col md:flex-row gap-stack-lg items-center">
+<div class="w-full md:w-1/2 flex flex-col gap-stack-md order-2 md:order-1">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">Lebih dari Sekadar Kopi</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                   Koppen_Street adalah kedai kopi jalanan yang hadir dengan konsep sederhana, santai, dan kekinian. Menyediakan berbagai pilihan minuman kopi dan non-kopi dengan cita rasa yang nikmat serta harga yang terjangkau. Koppen_Street menjadi tempat yang cocok untuk menikmati kopi sambil bersantai, berkumpul bersama teman, atau sekadar melepas penat setelah beraktivitas.
+
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Dengan suasana khas kopi jalanan yang nyaman dan dekat dengan pelanggan, Koppen_Street mengutamakan kualitas rasa, pelayanan yang ramah, serta pengalaman menikmati kopi yang menyenangkan. Koppen_Street — kopi nikmat, suasana santai, teman terbaik di setiap perjalanan.
+                </p>
+</div>
+<!-- Photography Frame -->
+<div class="w-full md:w-1/2 order-1 md:order-2">
+<div class="relative w-full h-[400px] md:h-[600px] bg-secondary-container rounded-tl-xl rounded-tr-xl rounded-bl-xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="A warm, inviting interior shot of a minimalist cafe bathed in soft, natural morning light filtering through sheer curtains. The space features smooth, light wood tables, deep espresso-colored ceramic cups, and subtle sage green accents. The aesthetic is Soft-Modern, evoking a sense of atmospheric comfort and quiet intentionality. High-quality photography, shallow depth of field." src="profile.jpeg"/>
+<!-- Decorative broken edge element -->
+<div class="absolute bottom-0 right-0 w-16 h-16 bg-background rounded-tl-xl"></div>
+</div>
+</div>
+</section>
+<!-- Photo Gallery Section -->
+<section class="flex flex-col gap-stack-md">
+<h2 class="font-headline-md text-headline-md text-primary text-center">Tempat </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="w-full h-[300px] rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="A close-up photograph of a meticulously crafted latte with perfect rosetta latte art, resting on a textured, light cream ceramic saucer. The lighting is soft and moody, highlighting the rich, dark espresso contrasting with the milk. The setting is a tactile, organic cafe table with a soft-modern aesthetic." src="tempat1.jpeg"/>
+</div>
+<div class="w-full h-[300px] rounded-lg overflow-hidden group md:mt-12">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="A wide shot of a quiet corner in a minimalist cafe featuring a comfortable, modern armchair in soft cream fabric, paired with a small side table holding an open book and a ceramic mug. The space is illuminated by soft, ambient light creating gentle shadows. The mood is tranquil, embodying the concept of atmospheric comfort." src="tempat2.jpeg"/>
+</div>
+<div class="w-full h-[300px] rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="A detail shot of the cafe counter, showcasing a sleek, modern espresso machine alongside artisanal coffee beans stored in clear glass jars. The counter surface is a warm, light latte tone. The aesthetic is clean, intentional, and highlights the tactile nature of the brewing process. Soft, diffused lighting." src="tempat3.jpeg"/>
+</div>
+</div>
+</section>
+<!-- Our Values Section (Bento Grid Style) -->
+<section class="flex flex-col gap-stack-md">
+<h2 class="font-headline-md text-headline-md text-primary text-center">Nilai-Nilai Kami</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Value 1: Sustainability (Span 8 cols) -->
+<div class="md:col-span-8 bg-surface-container-low p-8 rounded-xl flex flex-col justify-center relative overflow-hidden group">
+<!-- Subtle background texture/pattern -->
+<div class="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary to-transparent pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-4">
+<span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 0;">eco</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Keberlanjutan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                             Koppen_Street berkomitmen untuk terus berkembang dengan menjaga kualitas kopi, meningkatkan pelayanan, dan menghadirkan kegiatan komunitas yang positif. Ke depannya, Koppen_Street akan terus berinovasi dalam menu, suasana, serta kegiatan agar tetap dekat dengan pelanggan dan komunitas.
+                         </p>
+</div>
+</div>
+<!-- Value 2: Community (Span 4 cols) -->
+<div class="md:col-span-4 bg-secondary-container p-8 rounded-xl flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container mb-4" style="font-variation-settings: 'FILL' 0;">groups</span>
+<h3 class="font-headline-sm text-headline-sm text-on-secondary-container">Komunitas</h3>
+<p class="font-body-md text-body-md text-on-secondary-container opacity-90 mt-2">
+                          Komunitas Koppen_Street adalah wadah bagi pecinta kopi dan anak muda untuk berkumpul, berbagi cerita.
+                      </p>
+</div>
+<!-- Value 3: Quality (Span 12 cols, wide format) -->
+<div class="md:col-span-12 bg-primary text-on-primary p-8 md:p-12 rounded-xl flex flex-col md:flex-row items-center gap-8 shadow-2xl shadow-primary/10">
+<div class="w-full md:w-1/3 flex justify-center">
+<div class="w-32 h-32 rounded-full bg-on-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-inverse-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="w-full md:w-2/3 flex flex-col gap-4 text-center md:text-left">
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Kualitas Tanpa Kompromi</h3>
+<p class="font-body-lg text-body-lg text-inverse-primary opacity-90">
+                             Koppen_Street selalu mengutamakan kualitas dalam setiap sajian. Kami memilih bahan yang baik, menjaga proses pembuatan dengan teliti, dan memastikan setiap minuman memiliki rasa yang konsisten. Bagi kami, kepuasan pelanggan adalah prioritas, sehingga kualitas rasa, kebersihan, dan pelayanan selalu dijaga tanpa kompromi.
+                         </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest w-full py-stack-lg mt-stack-lg border-t border-surface-container dark:border-surface-container-high">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto gap-stack-md">
+<div class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed">
+                Koppen_street
+            </div>
+<nav class="flex gap-6">
+<a href="https://www.instagram.com/koppen_street/" 
+   target="_blank"
+   class="text-2xl hover:scale-110 transition-transform"
+   title="Instagram Koppen_Strett">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://wa.me/628216191582" 
+   target="_blank"
+   class="text-2xl hover:scale-110 transition-transform"
+   title="WhatsApp Koppen_Strett">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+</nav>
+<div class="font-caption text-caption text-on-surface-variant dark:text-on-secondary-fixed-variant">
+                # Angkringan koppen. Dari jalan untuk kamu.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple drawer logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const drawer = document.getElementById('navigation-drawer');
+        const overlay = document.getElementById('drawer-overlay');
+
+        function openDrawer() {
+            drawer.classList.remove('-translate-x-full');
+            overlay.classList.remove('hidden');
+            setTimeout(() => {
+                overlay.classList.remove('opacity-0');
+            }, 10);
+        }
+
+        function closeDrawer() {
+            drawer.classList.add('-translate-x-full');
+            overlay.classList.add('opacity-0');
+            setTimeout(() => {
+                overlay.classList.add('hidden');
+            }, 300);
+        }
+
+        mobileMenuBtn.addEventListener('click', openDrawer);
+        closeMenuBtn.addEventListener('click', closeDrawer);
+        overlay.addEventListener('click', closeDrawer);
+    </script>
+</body></html>
